@@ -9,7 +9,7 @@ const Products = ({ products }) => {
   const [pageNumber, setPageNumber] = useState(0);
   const ProductsPerPage = 27;
   const PagesVisited = ProductsPerPage * pageNumber;
-  const Products = products.reverse().slice(PagesVisited, PagesVisited + ProductsPerPage).map((item, index) => {
+  const Products = products.slice(PagesVisited, PagesVisited + ProductsPerPage).map((item, index) => {
     return (
       <div key={index} className='col-2 my-2' style={{ maxHeight: "450px" }}>
         <motion.div className='card p-1 bg-light'
