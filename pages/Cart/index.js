@@ -3,16 +3,16 @@ import React, { useContext, useEffect } from 'react';
 import { Cart } from '../../Store/CartItems';
 import Head from 'next/head';
 
-export const index = () => {
+const Index = () => {
     const { MyItems } = useContext(Cart);
-    let prices = [];
-    useEffect(() => {
-        if (MyItems.length > 0) {
-            for (let i = 0; i < MyItems.length - 1; i++) {
-                prices.push(MyItems[i].price)
-            }
-        }
-    });
+    // let prices = [];
+    // useEffect(() => {
+    //     if (MyItems.length > 0) {
+    //         for (let i = 0; i < MyItems.length - 1; i++) {
+    //             prices.push(MyItems[i].price)
+    //         }
+    //     }
+    // });
     return (
         <>
             <Head>
@@ -126,3 +126,5 @@ export const index = () => {
         </>
     )
 }
+
+export default Index
