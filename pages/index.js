@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Carusel from '../Components/Carusel';
 import Slidebar from '../Components/Slidebar';
-import products from '../Data/products.json';
 import Products from './products';
 
 export default function Home() {
@@ -13,8 +12,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Carusel />
-      <Slidebar products={products} /><br />
-      <Products products={products} />
+      <Slidebar /><br />
+      <Products />
     </>
   )
 }

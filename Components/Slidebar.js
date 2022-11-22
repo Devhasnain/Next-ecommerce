@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Slider from "react-slick";
 import Link from 'next/link';
+import products from '../Data/products.json'
 import { MdOutlineArrowBackIosNew, MdOutlineArrowForwardIos } from 'react-icons/md'
 
 
@@ -28,8 +29,8 @@ function SamplePrevArrow(props) {
   );
 }
 
-const Responsive = (props) => {
-  const [products, setProducts] = useState(props.products);
+const Responsive = () => {
+  // const [products, setProducts] = useState(products);
 
   let settings = {
     dots: false,

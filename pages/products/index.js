@@ -3,8 +3,9 @@ import React, { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 import Pagination from '../../styles/Pagination.module.css';
 import { motion } from 'framer-motion';
+import products from '../../Data/products.json';
 
-const Products = ({ products }) => {
+const Products = () => {
   const [product, setProducts] = useState(products);
   const [pageNumber, setPageNumber] = useState(0);
   const ProductsPerPage = 27;
