@@ -3,7 +3,7 @@ import React, { useContext, useEffect } from 'react';
 import { Cart } from '../../Store/CartItems';
 import Head from 'next/head';
 
-const index = () => {
+export const index = () => {
     const { MyItems } = useContext(Cart);
     let prices = [];
     useEffect(() => {
@@ -126,5 +126,3 @@ const index = () => {
         </>
     )
 }
-
-export default index
