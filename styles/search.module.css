@@ -1,0 +1,35 @@
+.input{
+    border: none;
+    background: transparent;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.input:focus{
+    box-shadow: none;
+    background: transparent;
+}
+.inputDiv{
+    background: rgb(245, 242, 242);
+    border-radius: 5px;
+}
+.inputDiv:hover{
+    background: rgb(240, 235, 235);
+}
+.mainDiv{
+    position: relative;
+}
+.resultsDiv{
+    position: absolute;
+    top: 40px;
+    background: rgb(245, 242, 242);
+    z-index: 10;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
+    transition: 1.5s;
+}
+.resultRow:hover{
+    background: rgb(240, 235, 235);
+}
+.ResultImg{
+    max-height: 10vh;
+}
